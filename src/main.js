@@ -84,7 +84,7 @@ let step = ()=>{
         }else{
             return;
         }
-    }, 50);
+    }, 10);
 }
 
 step();
