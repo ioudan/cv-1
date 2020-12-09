@@ -12,9 +12,21 @@
 
 Server running at http://localhost:1234
 ```
-## 打包，并指定公共路径
+## 打包，并指定公共资源的路径
+每次改完代码，必须运行一次，才能正确请求JS和CSS
 ```
-λ parcel build src/index.html --public-url dist
+//本次上传git的学习中，正确
+λ parcel build src/index.html --public-url .   
+main.e8b986df.js
+style.4430865c.css
+
+
+λ parcel build src/index.html --public-url dist   
+dist/main.e8b986df.js
+dist/style.4430865c.css
+
 λ parcel build src/index.html --public-url /
-λ parcel build src/index.html --public-url .   //本次上传git的学习中，正确
+/main.e8b986df.js
+/style.4430865c.css
+
 ```
