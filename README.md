@@ -12,4 +12,7 @@
 
 Server running at http://localhost:1234
 ```
-
+## 打包，并指定公共路径
+```
+λ parcel build src/index.html --public-url dist
+```
